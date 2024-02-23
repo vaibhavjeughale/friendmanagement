@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "firstName": "Shankar",
+      "lastName": "Jadhav",
+      "address": "Karve Nagar",
+      "email": "vaibhav@gmail.com",
+      "phone": "7218472483",
+      "id": 1
+    },
+    {
+      "id": 4,
+      "firstName": "Rahul",
+      "lastName": "JEUGHALE",
+      "address": "Karve nagar, pune",
+      "email": "rahul@gmail.com",
+      "phone": "7218472483"
+    },
+    {
+      "id": 5,
+      "firstName": "Gopal ",
+      "lastName": "kute",
+      "address": "pune ",
+      "email": "gopal@89gmail.com",
+      "phone": "7865899990"
+    }
+  ]
+}

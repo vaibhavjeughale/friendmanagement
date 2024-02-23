@@ -1,0 +1,17 @@
+.sim-pointer{
+    color: white;
+    cursor: pointer;
+}
+.table{
+    border: 1px solid;
+    align-items: center;
+    display: inline-table;
+    width: auto;
+    margin: 0px 24%;
+}
+.userlist{
+    display: flex;
+    justify-content: center;
+    color: darkgreen;
+
+}
