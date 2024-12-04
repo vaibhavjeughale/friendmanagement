@@ -5,9 +5,11 @@
 .table{
     border: 1px solid;
     align-items: center;
+    height: 100vh;
     display: inline-table;
-    width: auto;
-    margin: 0px 24%;
+    /* width: auto;
+    
+    margin: 0px 24%; */
 }
 .userlist{
     display: flex;

@@ -2,35 +2,41 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-
             <div class="main_div">
             <fieldset>  
                 <legend>
-                        User-Reactive Forms
+                        Ladki Bahin Get Together
                     </legend>
                     <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
                         <div class="form-group">
                             <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control" id="firstName" formControlName="firstName">
+                            <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="Enter firstName">
                         </div>
                         <div class="form-group">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+                            <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Enter lastName">
                         </div>
                         <div class="form-group">
                             <label for="address">Address:</label>
-                            <input type="text" class="form-control" id="address" formControlName="address">
+                            <input type="textarea" class="form-control" id="address" formControlName="address" placeholder="Enter Address">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" formControlName="email">
+                            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email address">
                             <div style="color: red;" *ngIf="userForm.get('email')!.hasError('email') && userForm.get('email')!.touched">
                                 Please enter a valid email.
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone:</label>
-                            <input type="text" id="phone" class="form-control" formControlName="phone">
+                            <label for="payment">Payment</label>
+                            <input type="text" class="form-control" id="number" formControlName="payment" maxlength="04" placeholder="Enter 1000 amount">
+                            <div style="color: red;" *ngIf="userForm.get('phone')!.hasError('pattern') && userForm.get('phone')!.touched">
+                                Please enter 1000 amount.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="text" id="phone" class="form-control" formControlName="phone" maxlength="10" placeholder="Enter mobile number">
                             <div style="color: red;" *ngIf="userForm.get('phone')!.hasError('pattern') && userForm.get('phone')!.touched">
                                 Please enter a 10-digit phone number.
                             </div>

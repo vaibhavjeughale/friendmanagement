@@ -35,6 +35,7 @@ export class UserUpsertComponent implements OnInit{
           lastName: userData.lastName,
           address: userData.address,
           email: userData.email,
+          payment:userData.payment,
           phone: userData.phone,
         });
       }
@@ -49,7 +50,8 @@ export class UserUpsertComponent implements OnInit{
       lastName: ['', Validators.required],
       address: [''],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.pattern('^\\d{10}$')]] // Accepts only 10-digit numbers
+      payment:['',Validators.required,Validators.maxLength(4)],
+      phone: ['', [Validators.required, Validators.pattern(/^[0-9]{10}$/),Validators.maxLength(10)]] // Accepts only 10-digit numbers
     });
   }
 
@@ -62,6 +64,7 @@ export class UserUpsertComponent implements OnInit{
       lastName:this.user_reg_data.lastName,
       address:this.user_reg_data.address,
       email:this.user_reg_data.email,
+      payment:this.user_reg_data.payment,
       phone:this.user_reg_data.phone
     }
      // Check if the email already exists in the user list

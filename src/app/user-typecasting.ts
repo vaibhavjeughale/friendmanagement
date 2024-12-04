@@ -4,6 +4,7 @@ export interface User{
     lastName:string,
     address?:string,
     email:string,
+    payment:number,
     phone?:string
 
 }

@@ -1,3 +1,5 @@
-<a routerLink="/user-list" class="btn btn-primary">User List</a>&nbsp;
-<a routerLink="/user-upsert" class="btn btn-secondary">Back to form</a>
+<input type="text" name="name"[(ngModel)]="inputvalue" #username>
+<button class="btn btn-success" (click)="userData(username.value)">Show user list</button>
+<a routerLink="/user-list" class="btn btn-primary" *ngIf="isUserlist">User List</a>&nbsp;
+<a routerLink="/user-upsert" class="btn btn-secondary" *ngIf="!isUserlist">Submit your payment details</a>
 <router-outlet></router-outlet>

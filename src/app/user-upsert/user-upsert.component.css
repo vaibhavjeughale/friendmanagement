@@ -2,7 +2,6 @@
     background-color: aqua;
     border: 1px solid aqua;
     border-radius: 5px;
-    width: 50%;
+    height: 100vh;
     justify-content: center;
-  
 }

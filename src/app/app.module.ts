@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserUpsertComponent } from './user-upsert/user-upsert.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { UserListComponent } from './user-list/user-list.component';
   imports: [
     UserModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

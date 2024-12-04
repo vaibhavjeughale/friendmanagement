@@ -29,6 +29,7 @@ export class UserListComponent  implements OnInit{
     lastName: ['', Validators.required],
     address: [''],
     email: ['', [Validators.required, Validators.email]],
+    payment:['',Validators.required,Validators.minLength(4)],
     phone: ['', [Validators.pattern(/^\d{10}$/)]], // Assumes 10-digit phone number
   });
   }
@@ -50,6 +51,7 @@ const user = this.userList.find((u) => u.id === userId);
           lastName: this.single_user_data.lastName,
           address: this.single_user_data.address,
           email: this.single_user_data.email,
+          payment:this.single_user_data.payment,
           phone: this.single_user_data.phone,
       })
     })
@@ -82,6 +84,7 @@ const user = this.userList.find((u) => u.id === userId);
           lastName: this.update_user_data.lastName,
           address: this.update_user_data.address,
           email: this.update_user_data.email,
+          payment:this.update_user_data.payment,
           phone: this.update_user_data.phone,
     }
     this.dataService.updateUser(this.userId,this.user_dto).subscribe((data)=>{

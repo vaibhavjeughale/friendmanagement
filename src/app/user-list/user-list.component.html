@@ -1,13 +1,14 @@
 <h5>Edit User data</h5>
-<div>{{single_user_data|json}}</div>
-<div>
-    <h4 class="userlist">User List Data</h4>
+<!-- <div>{{single_user_data|json}}</div> -->
+<div class="col-12">
+    <h4 class="userlist">Friend List Data</h4>
     <table class="table table-hover">
         <thead>
             <tr>
                 <th>No</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Payment Received</th>
                 <th>Phone</th>
                 <th>Action</th>
               </tr>
@@ -17,6 +18,7 @@
                 <th scope="row">{{i+1}}</th>
                 <td>{{ user.firstName }}</td>
                 <td>{{ user.email }}</td>
+                <td style="color:'green'">{{ user.payment }}</td>
                 <td>{{ user.phone }}</td>
                 <td>
                     <span class="sim-pointer btn btn-primary" (click)="editUserPopup(user.id)" 
