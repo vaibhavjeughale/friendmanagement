@@ -8,6 +8,15 @@
       "email": "vishal@gmail.com",
       "payment": 1000,
       "phone": "7344598323"
+    },
+    {
+      "id": 3,
+      "firstName": "VAIBHAV",
+      "lastName": "JEUGHALE",
+      "address": "Karve nagar, pune",
+      "email": "vaibhavlgj@gmail.com",
+      "payment": "1000",
+      "phone": "7218472483"
     }
   ]
 }
