@@ -17,6 +17,60 @@
       "email": "vaibhavlgj@gmail.com",
       "payment": "1000",
       "phone": "7218472483"
+    },
+    {
+      "id": 4,
+      "firstName": "satish ",
+      "lastName": "spkal",
+      "address": "satish@gmail.com",
+      "email": "satish@gmail.com",
+      "payment": "1000",
+      "phone": "9853453342"
+    },
+    {
+      "id": 5,
+      "firstName": "avi",
+      "lastName": "galde",
+      "address": "pune",
+      "email": "avi@gmail.com",
+      "payment": "1000",
+      "phone": "8789879877"
+    },
+    {
+      "id": 6,
+      "firstName": "shree",
+      "lastName": "jadhav",
+      "address": "khairao",
+      "email": "shree@gmail.com",
+      "payment": "1000",
+      "phone": "7218472483"
+    },
+    {
+      "id": 7,
+      "firstName": "shambhaji",
+      "lastName": "shankar",
+      "address": "shambhaji@gmail.com",
+      "email": "shambhaji@gmail.com",
+      "payment": "1000",
+      "phone": "9054353453"
+    },
+    {
+      "id": 8,
+      "firstName": "VAIBHAV",
+      "lastName": "JEUGHALE",
+      "address": "Karve nagar, pune",
+      "email": "principle_plit@rediffmail.com",
+      "payment": "1000",
+      "phone": "7218472483"
+    },
+    {
+      "id": 9,
+      "firstName": "laxman",
+      "lastName": "shinde",
+      "address": "pune",
+      "email": "lax@gmail.com",
+      "payment": "1000",
+      "phone": "7842342348"
     }
   ]
 }
