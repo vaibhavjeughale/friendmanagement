@@ -5,7 +5,7 @@
 .table{
     border: 1px solid;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     display: inline-table;
 }
 .userlist{
