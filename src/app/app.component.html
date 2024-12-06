@@ -1,5 +1,5 @@
 <input type="text" name="name"[(ngModel)]="inputvalue" #username>
 <button class="btn btn-success" (click)="userData(username.value)">Show user list</button>
 <a routerLink="/user-list" class="btn btn-primary" *ngIf="isUserlist">User List</a>&nbsp;
-<a routerLink="/user-upsert" class="btn btn-secondary" *ngIf="!isUserlist">Submit your payment details</a>
+<a routerLink="/user-upsert" class="btn btn-secondary">Submit your payment details</a>
 <router-outlet></router-outlet>
